@@ -15,7 +15,7 @@ fun main() {
     var numY = numbersOnlyY.toDouble()
     var z = numX / numY
     if (z.isNaN()){
-        println("პასუხი არაფერია")
+        println("ნულზე გაყოფა შეუძლებელია")
     }else{
         println("X და Y განაყოფი არის: $z")
     }
