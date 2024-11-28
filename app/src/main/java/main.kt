@@ -1,8 +1,10 @@
 fun main() {
-    var x = readln()
-    var y = readln()
-    var numbersOnlyX = x.filter { it.isDigit() }
-    var numbersOnlyY = y.filter { it.isDigit() }
+    println("შეიყვანეთ X-ის მნიშვნელობა:")
+    var X = readln()
+    println("შეიყვანეთ Y-ის მნიშვნელობა:")
+    var Y = readln()
+    var numbersOnlyX = X.filter { it.isDigit() }
+    var numbersOnlyY = Y.filter { it.isDigit() }
     if (numbersOnlyX.isEmpty()) {
         numbersOnlyX = "0"
         numbersOnlyX.toInt()
@@ -13,11 +15,11 @@ fun main() {
     }
     var numX = numbersOnlyX.toDouble()
     var numY = numbersOnlyY.toDouble()
-    var z = numX / numY
-    if (z.isNaN()){
+    var Z = numX / numY
+    if (Z.isNaN()){
         println("ნულზე გაყოფა შეუძლებელია")
     }else{
-        println("X და Y განაყოფი არის: $z")
+        println("X და Y განაყოფი არის: $Z")
     }
 
     println("გსურთ ახალი პროექტის დაწყება<Y/N>?")
